@@ -52,14 +52,17 @@ def pasienbaru():
 def delpasien():
     tabelpasien()
     Dpasien=input('Sebutkan nama yang hendak dihapus: ')
-    for i,j in enumerate(pasien): #i=index j=row
-        if j['Nama']==Dpasien.capitalize(): #over indetation
+    pasien_ditemukan = False  # Inisialisasi variabel penanda
+
+    for i, j in enumerate(pasien):
+        if j['Nama'] == Dpasien.capitalize():
             del pasien[i]
+            pasien_ditemukan = True  # Set penanda menjadi True
             print('\nPasien terupdate')
-            print(tabelpasien()) 
-            break
-        else :
-            print('Nama pasien tidak ditemukan')
+            tabelpasien()  # Cetak tabel setelah pembaruan
+
+    if not pasien_ditemukan:  # Cek apakah pasien tidak ditemukan
+        print('Nama pasien tidak ditemukan')
 
 def kategoripasien() : #penambahan untuk kesalahan input
     age = int(input('berapa umur anda (tahun) : '))
