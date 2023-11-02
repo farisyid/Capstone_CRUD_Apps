@@ -26,6 +26,7 @@ pasien = [
         'Kategori Triage': 'Kuning'
     }
 ]
+
 def tabelpasien():
     headers=['No','Nama','Jenis Kelamin','Umur','Keluhan','Tensi Darah','Kategori Triage']
     tabeldata=[[i+1,j['Nama'],j['Jenis Kelamin'],j['Umur'],j['Keluhan'],j['Tensi Darah'],j['Kategori Triage'],] for i,j in enumerate(pasien)]
@@ -33,44 +34,40 @@ def tabelpasien():
     print(table)
 
 def pasienbaru():
-        Nnamapasien = input('Nama Pasien : ')
-        Njeniskelamin = input('Jenis Kelamin : ')
-        Numur = int(input('Umur : '))
-        Nkeluhan = input('Keluhan : ')
-        Ntensidarah = input('Tensi Darah : ')
-        pasien.append({
-             'Nama': Nnamapasien.capitalize(),
-             'Jenis Kelamin': Njeniskelamin.capitalize(),
-             'Umur': Numur,
-             'Keluhan': Nkeluhan.capitalize(),
-             'Tensi Darah': Ntensidarah,
-             'Kategori Triage': '-'})
-        print(f'\nNama Pasien terupdate')
-        print(tabelpasien())
+    Nnamapasien = input('Nama Pasien : ')
+    Njeniskelamin = input('Jenis Kelamin : ')
+    Numur = int(input('Umur : '))
+    Nkeluhan = input('Keluhan : ')
+    Ntensidarah = input('Tensi Darah : ')
+    pasien.append({
+            'Nama': Nnamapasien.capitalize(),
+            'Jenis Kelamin': Njeniskelamin.capitalize(),
+            'Umur': Numur,
+            'Keluhan': Nkeluhan.capitalize(),
+            'Tensi Darah': Ntensidarah,
+            'Kategori Triage': '-'})
+    print(f'\nNama Pasien terupdate')
+    print(tabelpasien())
 
 def delpasien():
-    print(tabelpasien())
+    tabelpasien()
     Dpasien=input('Sebutkan nama yang hendak dihapus: ')
-    for i,j in enumerate(pasien):
-         if j['Nama']==Dpasien.capitalize():
+    for i,j in enumerate(pasien): #i=index j=row
+        if j['Nama']==Dpasien.capitalize(): #over indetation
             del pasien[i]
             print('\nPasien terupdate')
-            print(tabelpasien())
+            print(tabelpasien()) 
             break
-    else :
+        else :
             print('Nama pasien tidak ditemukan')
-    #  indexpasien=int(input('Sebutkan nomor yang hendak dihapus : '))
-    #  del pasien[indexpasien-1]
-    #  print('\nPasien terupdate')
-    #  print(tabelpasien())
 
-def empat() :
+def kategoripasien() : #penambahan untuk kesalahan input
     age = int(input('berapa umur anda (tahun) : '))
     tdX = int(input('berapa tensi darah anda (mm) : '))
     tdY = int(input('berapa tensi darah anda (Hg): '))
-    print(f'tensi darah anda {tdX}/{tdY} mm/Hg')
+    print(f'tensi darah anda {tdX}/{tdY} m0m/Hg')
     def tensi(age, tdX, tdY):
-        if age<3:
+        if age<3: #tambah sama dengan
             if 40<tdX<90 or 60<tdY<65 :
                 return 'normal'
             elif 90<tdX or 65<tdY :
@@ -78,7 +75,7 @@ def empat() :
             elif tdX<40 or tdY<60:
                 return 'rendah'
 
-        elif 3<age<6:
+        elif age<6:
             if 80<tdX<120 or 46<tdY<91 :
                 return 'normal'
             elif 120<tdX or 91<tdY :
@@ -112,6 +109,7 @@ def empat() :
             
     statustensi=tensi(age,tdX,tdY)
     print(f'tensi darah anda : {statustensi}')
+
 
     gjl=input('sebutkan gejalanya : ')
     def gejala(gjl):
@@ -159,7 +157,22 @@ def empat() :
     triagestatus=maintriage()
     print(f'kategori triage adalah : {triagestatus} ')
 
-
+def pembaruankondisi() :
+    tabelpasien()
+    Ppasien=input('Sebutkan nama yang hendak diperbarui: ')
+    for i,j in enumerate(pasien): #i=index j=row
+        if j['Nama']==Ppasien.capitalize(): #over indetation
+            kondisi = input('\nKeluhan pasien terkini? ')
+            pasien[i]['Keluhan'] = kondisi
+            tensiD = input('\nTensi darah pasien terkini? ')
+            pasien[i]['Tensi Darah'] = tensiD
+            katTri = input('\nTriage pasien terkini? ')
+            pasien[i]['Kategori Triage'] = katTri
+            print('Data Pasien Terupdate')
+            print(tabelpasien()) 
+            break
+        else :
+            print('Nama pasien tidak ditemukan')
 
 while True :
     opsi=input('''
@@ -169,7 +182,8 @@ while True :
         2. Tambah pasien
         3. Hapus pasien
         4. Pengkategorian pasien
-        5. Exit program
+        5. Pembaharuan pasien
+        6. Exit program
         
         Masukkan nomer yang hendak ditinjau : ''')
 
@@ -180,8 +194,8 @@ while True :
     elif opsi == '3':
          delpasien()
     elif opsi == '4':
-         empat()
+         kategoripasien()
     elif opsi == '5':
+         pembaruankondisi()
+    elif opsi == '6':
         break
-    
-
