@@ -1,31 +1,46 @@
 # Capstone_Project_Module1
+## Introduce
+Welcome to my github.
+This is my first capstone project as a student Purwadhika Job Connector Program Data Science. This is capstone project in module 1 : python fundamental.
+In this project will be talking about a simple application that has CRUD features. which means C to create, R to read, U to update, D to delete
+
+in this application there may be shortcomings, please excuse it because it is still in the learning stage. But i tried my best.
+
+## Program Introduce
 Program Triage Puskesmas
 Puskemas Mugi Waras
-Program ini adalah simulasi sederhana untuk mengelola data pasien di sebuah Puskesmas. Program memungkinkan pengguna untuk melihat daftar pasien, menambahkan pasien baru, menghapus pasien, dan melakukan pengkategorian pasien berdasarkan gejala dan tekanan darah.
-Terdapat menu sebagai berikut :
-![image](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/7d55e43c-7dfd-4b6d-bb3c-0db6c8d7f03c)
-Fitur
-1. Daftar Pasien Saat Ini
-Opsi ini memungkinkan Anda untuk melihat daftar pasien yang telah ditambahkan beserta informasi mereka seperti Nama, Jenis Kelamin, Umur, Keluhan, Tensi Darah, dan Kategori Triage.
-![image](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/28f6c897-657d-48ae-bb34-139ed9c8620d)
+This program is a simple simulation to manage patient data in a health centre. The program allows users to view patient lists, add new patients, delete patients, and categorise patients based on symptoms and blood pressure.
+There is a menu as follows :
+![Screenshot 2023-11-02 135543](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/ed16414f-0ac4-4dbb-93fd-2185e4dfa663)
+### Feature
 
-3. Tambah Pasien
-Opsi ini memungkinkan Anda untuk menambahkan pasien baru ke dalam daftar pasien. Anda akan diminta untuk mengisi informasi seperti Nama, Jenis Kelamin, Umur, Keluhan, dan Tensi Darah.
-![image](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/96457552-9392-41a1-8929-4ad9dcf23001)
+1. List of current patients
+This option allows you to view the list of patients that have been added along with their information such as Name, Gender, Age, Complaints, Blood Pressure, and Triage Category.
+![Screenshot 2023-11-02 135641](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/a504694f-6cba-403b-bc89-8d6247f29555)
 
-5. Hapus Pasien
-Opsi ini memungkinkan Anda untuk menghapus pasien dari daftar pasien. Anda akan diminta untuk menyebutkan nama pasien yang ingin dihapus.
-![image](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/c6c8c37c-0404-41f8-8595-160897ae10d4)
+2. Add new patients
+This option allows you to add a new patient to the patient list. You will be required to fill in information such as Name, Gender, Age, Complaint, and Blood Pressure.
+![Screenshot 2023-11-02 135800](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/cb8c374d-a822-47e2-bab8-cfe157035b4b)
 
-7. Pengkategorian Pasien
-Opsi ini memungkinkan Anda untuk melakukan pengkategorian pasien berdasarkan gejala dan tekanan darah. Anda akan diminta untuk mengisi informasi seperti Umur, Tekanan Darah (dalam format mm/Hg), dan Gejala yang dialami oleh pasien. Program akan memberikan kategori triage yang sesuai untuk pasien tersebut.
-![image](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/ca54e3c5-98a2-41dc-939f-bbf02a7e26c8)
+3. Delete patients
+This option allows you to remove a patient from the patient list. You will be prompted for the name of the patient you wish to remove.
+![Screenshot 2023-11-02 141215](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/7613fd1e-352e-4108-b265-8214f98af7ba)
+
+
+4. Triage Categorize
+This option allows you to categorise patients based on symptoms and blood pressure. You will be required to fill in information such as Age, Blood Pressure (in mm/Hg format), and Symptoms experienced by the patient. The programme will provide the appropriate triage category for the patient.
+![Screenshot 2023-11-02 141300](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/6a4a5d5c-910f-44a0-ae96-183749d85812)
+
+5. Update patients
+This option allows you to modify patient condition when the triage founded and could change the others column if you need
+![Screenshot 2023-11-02 141729](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/bca1596b-e8df-4339-bad1-55afef90c717)
+
 
 9. Exit Program
-Opsi ini akan mengakhiri program.
+This option will end the programme.
 
-Catatan
-Pastikan Anda menjalankan program dalam lingkungan yang memiliki dukungan untuk Python dan library yang dibutuhkan. Jika Anda mengalami masalah saat menjalankan program atau memasukkan input, pastikan untuk mengikuti petunjuk yang diberikan oleh program.
-Program ini hanya simulasi sederhana dan tidak menggantikan sistem manajemen pasien yang sesungguhnya. Program ini hanya bertujuan untuk tujuan pendidikan dan demonstrasi.
+Note
+Make sure you run the programme in an environment that has support for Python and the required libraries. If you encounter any problems while running the programme or entering inputs, be sure to follow the instructions provided by the programme.
+This programme is a simple simulation and does not replace a real patient management system. This programme is for educational and demonstration purposes only.
 
-Aplikasi ini merupakan aplikasi yang dibuat untuk pembelajaran pada dasar pemrograman Python, jika ada pertanyaan soal aplikasi tersebut dan ada saran yang ingin diberikan dengan senang hati akan saya tampung, berikut email saya farisyid@gmail.com. Terima Kasih.
+This application is an application made for learning the basics of Python programming, if there are questions about the application and there are suggestions that want to be given I will be happy to accommodate, here is my email farisyid@gmail.com. Thank you.
