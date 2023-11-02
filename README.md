@@ -15,28 +15,34 @@ There is a menu as follows :
 ### Feature
 
 1. List of current patients
+   
 This option allows you to view the list of patients that have been added along with their information such as Name, Gender, Age, Complaints, Blood Pressure, and Triage Category.
 ![Screenshot 2023-11-02 135641](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/a504694f-6cba-403b-bc89-8d6247f29555)
 
 2. Add new patients
+   
 This option allows you to add a new patient to the patient list. You will be required to fill in information such as Name, Gender, Age, Complaint, and Blood Pressure.
 ![Screenshot 2023-11-02 135800](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/cb8c374d-a822-47e2-bab8-cfe157035b4b)
 
 3. Delete patients
+   
 This option allows you to remove a patient from the patient list. You will be prompted for the name of the patient you wish to remove.
 ![Screenshot 2023-11-02 141215](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/7613fd1e-352e-4108-b265-8214f98af7ba)
 
 
 4. Triage Categorize
+   
 This option allows you to categorise patients based on symptoms and blood pressure. You will be required to fill in information such as Age, Blood Pressure (in mm/Hg format), and Symptoms experienced by the patient. The programme will provide the appropriate triage category for the patient.
 ![Screenshot 2023-11-02 141300](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/6a4a5d5c-910f-44a0-ae96-183749d85812)
 
 5. Update patients
+   
 This option allows you to modify patient condition when the triage founded and could change the others column if you need
 ![Screenshot 2023-11-02 141729](https://github.com/farisyid/Capstone_Project_Module1/assets/142249730/bca1596b-e8df-4339-bad1-55afef90c717)
 
 
-9. Exit Program
+6. Exit Program
+   
 This option will end the programme.
 
 Note
